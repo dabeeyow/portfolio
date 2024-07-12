@@ -1,3 +1,6 @@
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('Welcome to my GitHub Page!');
+$(document).ready(function() {
+    $('form').submit(function(event) {
+        event.preventDefault();
+        alert('Form submitted!');
+    });
 });
